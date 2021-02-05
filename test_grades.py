@@ -21,6 +21,6 @@ def test_three_grades():
     grades = [20, 40, 60]
     assert compute_hw_average(grades) == 40
 
-def test_four_grade():
+def test_four_grades():
     grades = [20, 40, 60, 80]
-    assert compute_hw_average(grades) == 55
+    assert compute_hw_average(grades) == 50

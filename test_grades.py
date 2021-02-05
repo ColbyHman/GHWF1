@@ -8,6 +8,7 @@ def test_zero_grades():
 
 
 def test_single_grade():
+    # This verifies that one grade works
     grades = [42]
     assert compute_hw_average(grades) == 42
 
@@ -22,10 +23,16 @@ def test_three_grades():
     assert compute_hw_average(grades) == 40
 
 def test_four_grades():
+    # This verifies that six grades work
     grades = [20, 40, 60, 80]
     assert compute_hw_average(grades) == 50
 
 def test_five_grades():
-    # This verifies that three grades work
+    # This verifies that five grades work
     grades = [20, 40, 60, 80, 50]
     assert compute_hw_average(grades) == 50
+
+def test_six_grades():
+    # This verifies that six grades work
+    grades = [20, 40, 60, 80, 50, 20]
+    assert compute_hw_average(grades) == 45

@@ -17,5 +17,6 @@ def test_two_grades():
     assert compute_hw_average(grades) == 40
 
 def test_three_grades():
+    # This verifies that three grades work
     grades = [20, 40, 60]
     assert compute_hw_average(grades) == 40
